@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+p {
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #333;
+    color: #fff;
+    opacity: .8;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    padding: 0 30px;
+}
+
+.navbar a {
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    border-bottom: #28a745 2px solid;
+}
+
+.navbar ul {
+    display: flex;
+
+}
+
+.navbar .logo {
+    font-weight: 400;
+}
+
+/* Header */
+.hero {
+    background: url("../img/home/showcase.jpg") no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    color: #fff;
+}
+
+.hero .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.hero .content h1 {
+    font-size: 3.2rem;
+
+}
+
+.hero .content p {
+    font-size: 1.3rem;
+    max-width: 600px;
+    margin: 20px 0 30px;
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #28a745;
+    opacity: .2;
+}
+
+.hero * {
+    z-index: 10;
+}
+
+/* Incons */
+.icons {
+    padding: 20px;
+}
+
+
+.icons h3 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.icons i {
+    background-color: #28a745;
+    color: #fff;
+    padding: 1.2rem;
+    margin-bottom: 15px;
+    border-radius: 50%;
+}
+
+.icons p {
+    margin-bottom: 45px;
+    text-align: justify;
+
+}
+
+.team-image {
+    display: flex;
+    justify-content: space-around;
+}
+.cases img:hover, 
+#team img:hover {
+    opacity: .7;
+}
+
+#team img {
+    border-radius: 50%;
+    border: #28a745 2px solid;
+}
+
+.team p, 
+.team h4 {
+    text-align: center;
+}
+
+/* conact form */
+.contact-form {
+    display: block;
+    width: 50%;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+.row .column-2 {
+    width: 100%;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-section {
+    margin-bottom: 15px;
+}
+
+.contact-form input {
+    width: 100%;
+    padding: 4px;
+    height: 40px;
+    border: #f5f5f5 1px solid;
+}
+
+.contact-form [type="submit"] {
+    width: 25%;
+}
+
+.contact-form input:focus {
+    outline: outset #28a745;
+}
+
+
+/* Footer */
+#main-footer {
+    background: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    height: 13%;
+}
